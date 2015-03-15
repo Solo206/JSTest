@@ -1,0 +1,150 @@
+/*global*/
+/*added font of traveling type to font */
+@font-face {
+	font-family: 'TravelingType';
+	src: url('TravelingTypewriter.ttf');
+}
+/*body section*/
+/*body will have background color of #969696;font color of #000000; font-family of arial, helvetica or sans-serif; font-size of .9em*/
+body { background-color:#969696; 
+		color: #000000;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: .9em;		
+}
+
+/*sections*/
+/*header section*/
+
+/*header container will have height of 140px;background image of keyboard keys logo, which will be centered; not repeated; 
+and have background color of #B0B0B0*/
+header {
+		height: 140px;
+		background-image:url(keyboardlogo2.jpg);
+		background-position:center;
+		background-repeat:no-repeat;
+		background-color:#B0B0B0;
+}
+
+/*h1 in header seciton will have margin of 0; text will be indented 100%; white space will not be wrapped; overflow will be hidden;
+this is to increase accessibility to visually impaired*/
+h1{ 
+	margin:0;
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+
+/*nav section*/
+
+/*nav container will be floated left; text inside will be centered; font weight will be set to bold;
+font family will be set as traveling type with size 1.5em; and width 200px; padding will be present on left-right sides*/
+nav {
+	float:left;
+	text-align:center;
+	font-weight: bold;
+	font-family:'TravelingType', sans-serif;
+	font-size:1.5em;
+	padding: 0 10px;
+	}
+
+nav ul {
+	padding: 0;
+	margin-left: 0;
+	list-style-type: none;
+}
+
+/*converted nav link to block display fill container of unordered list item; links are set to not display underline*/
+nav a{
+	display:block;
+	text-decoration: none;
+}
+/*nav list items will have bottom margin spacing of 15px; border of solid black 2px line and white box shadow and border radius of 5px*/
+nav li {
+	margin-bottom: 15px;
+	border:black solid 2px;
+	box-shadow:1px 5px 5px white;
+	border-radius: 5px 5px;
+}
+/*nav list items will remain blue whether visited or not visited*/
+nav li a:link, nav li a:visited {
+	color: blue;
+}
+/*nav list items will turn white and have background color of #969696 when hovered*/
+nav li a:hover{
+	color: white;
+	background-color:#969696;
+}
+
+/*main section*/
+/*main will be blocked out and overflow will be set to auto, padding left will be set to 15px; background color will be #E0E0E0*/
+main {
+	display:block;
+	overflow:auto;
+	padding-left:15px;
+	margin-left:200px;
+	background-color:#E0E0E0;
+}
+/*main paragraphs will have 5px padding on all sides and narrowed to 80% of main container*/
+main p {
+	padding: 5px;
+	padding: 15px;
+}
+/*main img will have margin of 5px on all sides, and border of 3px white solid line*/
+main img {
+			margin: 5px;
+			border: 3px solid white;
+}
+
+/*footer section*/
+
+/*footer will be cleared from main and nav sections; any text will be centered; padding at bottom will be increased to 20px;
+footer background color will be set to #CFCFCF
+*/
+footer {clear:both;
+		text-align:center;
+		padding-bottom:20px;
+		background-color:#CFCFCF;
+		width:100%;
+		border: 1px solid white;
+}
+/*footer links will have no underline and font size of .9em, and left/right padding of 0.5em*/
+footer a { text-decoration:none; 
+				padding: 0 0.5em;
+				font-size:.9em;
+}
+/*footer links will be blue whether visited or not*/
+footer a:link, footer a:visited {
+		color:blue;
+}
+/*footer links hovered will turn fonts white*/
+footer a:hover {
+	color:white;
+}
+
+/*classes*/
+/*copy and email classes are set to .8em font size, with italics, and centered*/
+.copy, .email { font-size: .8em;
+		font-style: italic;
+		text-align: center;
+	}
+/*image of keyboard is floated right in main container*/
+.floatright { float:right; }
+
+/*id*/
+
+/*wraps the content into width of 60% of viewport-more readable
+background-color set to #d3d3d3, min-width set as 750px and max-width as 1024px*/
+#wrapper {
+		  width:80%;
+		  border:1px solid white;
+		  margin-right: auto;
+		  margin-left:auto;
+		  min-width: 750px;
+		  max-width: 1024px;
+   	  	  background-color: #D3D3D3;
+}
+#map-canvas{
+	height:100%;
+	margin:0;
+	padding:0;
+}
