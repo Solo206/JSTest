@@ -156,7 +156,7 @@ header, nav, main, footer{
 
 /*map container*/
 #map-canvas{
-	height:100%;
+	min-height:300px;
 	margin:0;
 	padding:0;
 }
