@@ -153,3 +153,10 @@ background-color set to #d3d3d3, min-width set as 750px and max-width as 1024px*
 header, nav, main, footer{
 	display:block;
 }
+
+/*map container*/
+#map-canvas{
+	height:100%;
+	margin:0;
+	padding:0;
+}
